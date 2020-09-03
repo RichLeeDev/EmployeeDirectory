@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Base Styles -------------------- */
+
+html {
+  font-size: 0.875em;
+}
+body {
+  position: relative;
+}
+
+
+
+
+/* Pseudo-classes ------------------ */
+
+
+
+/* Main Styles --------------------- */
+
+.hidden {
+display: none;
+}
+
+/* Layout Styles ------------------ */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4)
+}
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+position: absolute;
+right: 15px;
+top: 5px;
+cursor: pointer;
+}
+
+
+/* Media Queries ------------------ */
+
+@media screen and (min-width: 80em) {
+  html {
+    font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40); /* 1 */
+    font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40); /* 2 */
+    font-size: -ms-calc(0.875em + 0.25 * (100vw - 80em) / 40); /* 3 */
+  }
+}
+
+@media screen and (min-width: 120em) {
+  html {
+    font-size: 1.125em;
+  }
+}
