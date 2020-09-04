@@ -8,7 +8,7 @@
 /* Base Styles -------------------- */
 
 html {
-  font-size: 0.875em;
+  font-size: 0.975em;
   margin: 0 auto;
 }
 body {
@@ -53,7 +53,7 @@ header {
   flex-grow: 1;
 }
 .card {
-  width: 450px;
+  width: 380px;
   display: flex;
   border-radius: 10px;
   border: 2px solid lightgrey;
@@ -61,8 +61,23 @@ header {
   margin: 5px;
 }
 .text-container {
-  padding-left: 60px;
   margin-top: 25px;
+}
+.grid-container .text-container {
+  padding-left: 20px;
+}
+.modal .text-container .address {
+  margin-top: 8px;
+}
+.modal .text-container .email {
+  margin-top: 4px;
+}
+.modal .text-container .address {
+  margin-bottom: 15px;
+}
+.modal .text-container .phone {
+  margin-top: 20px;
+  color: grey;
 }
 .name {
   padding-bottom: 5px;
@@ -74,6 +89,9 @@ header {
 }
 .address {
   font-size: .725em;
+}
+.birthday {
+  color: grey;
 }
 .email,
 .address {
@@ -88,21 +106,23 @@ header {
   background: rgba(100, 100, 100, 0.4)
 }
 .modal {
-  width: 375px;
-  margin: 15% auto auto;
+  height: 450px;
+  width: 400px;
+  margin: 5% auto auto;
   position: relative;
   text-align: center;
   background: #fff;
   border: 1px solid #778;
   border-radius: 5px;
-  padding: 30px 20px;
+  padding: 30px 25px;
 }
 
 .modal-close {
 position: absolute;
-right: 15px;
-top: 5px;
+right: 10px;
+top: 10px;
 cursor: pointer;
+border: none;
 }
 
 

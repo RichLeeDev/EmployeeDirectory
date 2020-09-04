@@ -54,9 +54,9 @@ const modalHTML = `
 <p class="email">${email}</p>
 <p class="address">${city}</p>
 <hr />
-<p>${phone}</p>
+<p class="phone">${phone}</p>
 <p class="address">${street}, ${state} ${postcode}</p>
-<p>Birthday:
+<p class="birthday">Birthday:
 ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
 </div>
 `;
